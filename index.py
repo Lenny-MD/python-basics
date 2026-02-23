@@ -12,3 +12,6 @@ location="Nairobi"
 print(location)
 
 print("Hello World!")
+
+name2="Lenny Wisdom"
+print(name2)
