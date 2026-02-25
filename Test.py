@@ -50,3 +50,5 @@ student2 = {
 }
 
 print(student2)
+
+#Prac functions

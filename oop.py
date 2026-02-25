@@ -46,5 +46,29 @@ Account1.withdraw(3500)
 
 #Check balance
         
+class Equity_Account:
+    def __init__(self,name,cbalance=0):
+        self.name=name
+        self.cbalance=cbalance
+    def deposit(self,amount):
+        self.cbalance+=amount
+        print(f"{amount} KSH deposited,new balance is {self.cbalance}")
+    def check_balance(self,cbalance):
+        self.cbalance=cbalance
+        print(f"Your Current Balance is {self.cbalance} Ksh")
+    def withdraw(self,amount):
+        if amount>self.cbalance:
+            print(f"Insufficient Funds")
+        else:
+            self.cbalance-=amount
+            print(f"{amount} Ksh Withdrawn successfully, new balance is {self.cbalance}")
+
+AccountA= Equity_Account("Lenny",100000)
+AccountA.deposit(50000)
+AccountA.check_balance
+AccountA.withdraw(75000)
+AccountA.check_balance
+
+        
         
      
